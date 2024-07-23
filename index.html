@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="TypeBeats">
+    <meta name="description" content="TypeBeats - Type along to the beats.">
+    <meta name="keywords" content="osu, beats, typerush, typebeats, monkeytype">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="RuskyDev" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>TypeBeats - Type along to the beats.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('./images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-900 bg-opacity-75">
+    <div class="mb-6 text-center">
+        <div class="text-4xl font-extrabold mb-4" id="display">Select a song to begin:</div>
+    </div>
+    <input type="text" id="wordInput" class="w-80 p-4 text-2xl border border-transparent rounded-lg shadow-lg focus:outline-none ring-4 ring-gray-500 bg-white text-gray-900 placeholder-gray-500 text-center" placeholder="Type here..." />
+    <br>
+    <select id="musicSelect" class="mb-4 p-2 text-lg border border-transparent rounded-lg shadow-lg focus:outline-none ring-4 ring-gray-500 bg-white text-gray-900 placeholder-gray-500">
+        <option value="" disabled selected>Select a Song</option>
+    </select>
+    
+    <audio id="audio" controls hidden></audio>
+
+    <div class="mt-4 text-center">
+        <a class="text-lg mb-2 text-white hover:text-gray-400 transition duration-300" href="mailto:iamayaanalee@gmail.com" target="_blank" >Got a song suggestion?</a>
+    </div>
+
+    <footer class="absolute bottom-4 text-center text-white">
+        <p class="text-lg">Made with <span class="text-red-500">♥</span> by <a href="https://rusky.is-a.dev" target="_blank" class="underline">Rusky</a></p>
+    </footer>
+    
+    <script src="client.js"></script>
+</body>
+</html>
