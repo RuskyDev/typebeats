@@ -94,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function populateMusicOptions() {
         const musicFiles = [
-            'Feline, The White by cranky'
+            'Feline, The White by cranky',
+            'Soviet Connection by Rockster Games'
         ];
         musicFiles.forEach(file => {
             const option = document.createElement('option');
